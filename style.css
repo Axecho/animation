@@ -1,0 +1,365 @@
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 253, 146);
+    padding: 4px 4px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 200;
+    flex: 1;
+}
+
+.channel-picture
+{
+    width: 80px;
+    border-radius: 40px;
+}
+
+.title-text
+{
+    font-family: 'REM', 'Arial';
+    font-size: 50px;
+    margin: 0;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+body
+{
+    margin-top: 150px;
+    margin-bottom: 500px;
+}
+
+.complete-grid
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.friends-minia,
+.piou-minia,
+.draw-minia,
+.axolotl-minia
+{
+    position: relative;
+    margin: 0;
+    width: 400px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.friends-minia:hover,
+.piou-minia:hover,
+.draw-minia:hover,
+.axolotl-minia:hover
+{
+    cursor: pointer;
+}
+
+.complete-video-friends,
+.complete-video-piou,
+.complete-video-draw,
+.complete-video-axolotl
+{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin: 0;
+}
+
+p
+{
+    margin: 0;
+    font-family: 'REM', 'Arial';
+}
+
+.rokiwi-picture
+{
+    margin-right: -10px;
+    width: 35px;
+    margin-bottom: 35px;
+}
+
+.profile-div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.friends-title,
+.piou-title,
+.draw-title,
+.axolotl-title
+{
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    width: 260px;
+}
+
+.friends-title:hover,
+.piou-title:hover,
+.draw-title:hover,
+.axolotl-title:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.stats
+{
+    margin-left: 20px;
+}
+
+.img-friends,
+.img-piou,
+.img-draw,
+.img-axolotl
+{
+    position: relative;
+}
+
+.time-block
+{
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 3px 6px;
+    font-family: 'REM', 'Arial';
+    bottom: 10px;
+    right: 5px;
+}
+
+.details
+{
+    font-weight: 200;
+    color: rgb(48, 48, 48);
+}
+
+.name-p
+{
+    font-weight: 200;
+    color: rgb(48, 48, 48);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.shop-button
+{
+    font-size: 30px;
+    font-family: 'REM', 'Arial';
+    height: 50px;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 1px black solid;
+    color: white;
+    border-radius: 3px;
+    transition: 0.30s;
+}
+
+.shop-button:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.accueil-button
+{
+    font-size: 30px;
+    font-family: 'REM', 'Arial';
+    height: 50px;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 1px black solid;
+    color: white;
+    border-radius: 3px;
+    transition: 0.30s;
+}
+
+.accueil-button:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.no-use
+{
+    display: flex;
+}
+
+.nav-buttons
+{
+    position: fixed;
+    left: 10px;
+}
+
+.space
+{
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.048);
+    position: relative;
+    top: 350px;
+    padding-bottom: 200px;
+}
+
+.sub-button
+{
+    font: 20px 'REM';
+    cursor: pointer;
+    background-color: rgb(54, 54, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 8px;
+    margin-left: 10px;
+}
+
+.sub
+{   
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'REM', 'Arial';
+}
+
+.js-sub
+{
+    background-color: rgb(88, 88, 88);
+}
+
+.subby-img
+{
+    position: absolute;
+    top: 40px;
+    width: 240px;
+    right: 200px;
+}
+
+@media screen and ( width <= 365px)
+{
+    .complete-grid
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 5%;
+        right: 5%;
+        gap: 15px;
+    }
+
+    .friends-minia,
+    .piou-minia,
+    .draw-minia,
+    .axolotl-minia
+    {
+        width: 300px;
+    }
+    
+    .time-block
+    {
+        right: 5px;
+        bottom: 10px;
+    }
+
+    .nav
+    {
+        display: block;
+        height: 400px;
+    }
+}
+
+@media screen and ( width <= 800px)
+{
+    .complete-grid
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        left: 50px;
+        right: 10%;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .friends-minia,
+    .piou-minia,
+    .draw-minia,
+    .axolotl-minia
+    {
+        width: 300px;
+        flex: 50%;
+    }
+    
+    .time-block
+    {
+        right: 9px;
+        bottom: 10px;
+    }
+
+    .nav-buttons
+    {
+        display: block;
+        position: absolute;
+    }
+}
+
+@media screen and ( width > 800px)
+{
+    .complete-grid
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        row-gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .friends-minia,
+    .piou-minia,
+    .draw-minia,
+    .axolotl-minia
+    {
+        width: 400px;
+    }
+    
+    .time-block
+    {
+        right: 5px;
+        bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
